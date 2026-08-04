@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PassX | Secure Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">🔐 PassX</div>
+
+        <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <div class="hero">
+            <h1>Secure Password Manager</h1>
+
+            <p>
+                <strong>Welcome to PassX!</strong><br><br>
+
+                Store all your passwords safely in one place.
+                PassX helps you organize, manage, and access your login credentials
+                securely whenever you need them.
+
+                <br><br>
+
+                Save website credentials<br>
+                Copy passwords instantly<br>
+                Delete saved passwords<br>
+                Secure local storage
+            </p>
+        </div>
+
+        <div class="password-list">
+
+            <h2>
+                Saved Passwords
+                <span id="alert">(Copied Successfully)</span>
+            </h2>
+
+            <table>
+
+                <thead>
+
+                    <tr>
+                        <th>Website</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>Delete</th>
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <div class="add-password">
+
+            <h2>Add New Password</h2>
+
+            <form id="passwordForm">
+
+                <label for="website">Website</label>
+                <input
+                    type="text"
+                    id="website"
+                    placeholder="https://example.com"
+                    required>
+
+                <label for="username">Username / Email</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="example@gmail.com"
+                    required>
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    required>
+
+                <button class="btn" type="submit">
+                    Save Password
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="JS.js"></script>
+
+</body>
+</html>
